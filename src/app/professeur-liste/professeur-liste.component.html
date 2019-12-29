@@ -1,0 +1,19 @@
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">Id</th>
+    <th scope="col">Nom</th>
+    <th scope="col">Nom d'utilisateur</th>
+    <th scope="col">Mot de passe</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let prof of package">
+    <td>{{prof.id}}</td>
+    <td>{{prof.nom}}</td>
+    <td>{{prof.username}}</td>
+    <td>{{prof.password}}</td>
+
+  </tr>
+  </tbody>
+</table>

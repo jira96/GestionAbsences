@@ -1,0 +1,36 @@
+<form>
+  <div class="form-group">
+    <label >Id Professeur</label>
+    <input for = "inputNom" name="nom" type="text" [(ngModel)]="id" class="form-control" id="exampleInputNom">
+
+  </div>
+  <button class="btn btn-danger" (click)="getProf(id)">Chercher</button>
+
+</form>
+
+<div class="col-sm-8">
+  <form>
+
+    <div class="form-group">
+      <label >Nom Complet</label>
+      <input for = "inputNom" name="nom" type="text" [(ngModel)]="profMod.nom" value={{package.nom}} class="form-control" id="exampleInputNom">
+    </div>
+
+
+    <div class="form-group">
+      <label >Nom d'utilisateur</label>
+      <input for = "inputUserName" name="username" type="text" value= {{package.username}} [(ngModel)]="profMod.username"class="form-control" id="InputUserName">
+    </div>
+
+    <div class="form-group">
+      <label >Mot de passe</label>
+      <input for= "InputPassword" name="password" type="password" value={{package.password}} [(ngModel)]="profMod.password" class="form-control" id="exampleInputPassword1">
+
+
+    </div>
+
+    <button type="submit" class="btn btn-primary" (click)="update()">Modifier</button>
+  </form>
+</div>
+
+

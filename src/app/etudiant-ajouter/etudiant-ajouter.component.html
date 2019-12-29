@@ -1,0 +1,32 @@
+<div class="col-sm-8">
+<form>
+
+<div class="form-group">
+  <label >CNE</label>
+  <input type="text" [(ngModel)]="etu.cne" class="form-control" id="InputCNE">
+</div>
+
+<div class="form-group">
+  <label >Nom Complet</label>
+  <input type="text" [(ngModel)]="etu.nom" class="form-control" id="exampleInputNom">
+</div>
+
+<div class="form-group">
+  <label >Classe</label>
+  <input type="text" [(ngModel)]="etu.class" class="form-control" id="Classe">
+</div>
+
+<div class="form-group">
+  <label >Nom d'utilisateur</label>
+  <input type="text" [(ngModel)]="etu.username" class="form-control" id="InputUserName">
+</div>
+
+<div class="form-group">
+  <label for="exampleInputPassword1">Mot de passe</label>
+  <input type="password" [(ngModel)]="etu.password" class="form-control" id="exampleInputPassword1">
+</div>
+  <button type="submit" class="btn btn-primary" (click)="save()">Submit</button>
+</form>
+</div>
+
+

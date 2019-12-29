@@ -1,0 +1,22 @@
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">Id</th>
+    <th scope="col">CNE</th>
+    <th scope="col">Nom</th>
+    <th scope="col">Id Classe</th>
+    <th scope="col">Nom d'utilisateur</th>
+    <th scope="col">Mot de passe</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let etu of etudiants">
+    <td>{{etu.id}}</td>
+    <td>{{etu.cne}}</td>
+    <td>{{etu.nom}}</td>
+    <td>{{etu.class}}</td>
+    <td>{{etu.username}}</td>
+    <td>{{etu.password}}</td>
+  </tr>
+  </tbody>
+</table>
